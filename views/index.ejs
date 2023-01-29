@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etract text from html</title>
+</head>
+<body>
+    <form action="/extracttext" method="post">
+        <label for="html">Enter HTML:</label>
+        <textarea name="html" id="" cols="30" rows="10"></textarea>
+        <button>Extract text</button>
+    </form>
+    <%if(text){%>
+    <textarea name="output" id="" cols="30" rows="10"><%=text%></textarea>
+    <%}%>
+</body>
+</html>
